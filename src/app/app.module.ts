@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookComponent } from './book/book.component';
 import { MaterialsModule } from "./shared/materials.module";
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MaterialsModule } from "./shared/materials.module";
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule, 
-    MaterialsModule
+    MaterialsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
