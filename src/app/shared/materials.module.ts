@@ -23,6 +23,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatDividerModule } from '@angular/material/divider';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   exports: [
@@ -50,6 +51,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatDialogModule,
     MatExpansionModule,
     MatDividerModule,
+    FlexLayoutModule
   ],
 })
 export class MaterialsModule { }
