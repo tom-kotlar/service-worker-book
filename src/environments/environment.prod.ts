@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  azureContainers: {
+    baseUrl: 'blob.core.windows.net',
+    storage: 'testworker',
+    container: 'books'
+  }
 };

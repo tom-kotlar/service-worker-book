@@ -12,11 +12,11 @@ import { catchError, shareReplay, tap } from 'rxjs/operators';
 })
 export class BookComponent implements OnInit {
   books$: Observable<Book[]>;
-
+  private env = environment
   private booksUrl: string;
 
   constructor(private http: HttpClient) {
-    this.booksUrl = `https://${environment.azureContainers.storage}.${environment.azureContainers.baseUrl}/${environment.azureContainers.container}/books.json`;
+    this.booksUrl = `https://${this.env.azureContainers.storage}.${this.env.azureContainers.baseUrl}/${this.env.azureContainers.container}/books.json`;
   }
 
   ngOnInit() {
