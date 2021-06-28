@@ -1,4 +1,8 @@
-# ServiceWorker
+# ServiceWorker Book Example
+
+#  Pre-requirments
+
+##   🚧 Create storage account in Azure storage with books data 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
